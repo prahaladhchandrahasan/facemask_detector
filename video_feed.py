@@ -23,7 +23,7 @@ while True:
 		pred = 'Mask'
 		cv2.putText(frame, pred, (150,400), font , 2, (0, 255, 0),3, cv2.LINE_AA)
 
-	#cv2.imshow('gray', gray1)
+	
 	cv2.imshow('frame', frame)
 
 
