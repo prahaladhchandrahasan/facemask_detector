@@ -26,8 +26,8 @@ print("[INFO] Shapes of data and lables arrays")
 print(data.shape)
 print(lables.shape)
 
-np.save("data.npz",data)
-np.save("lables.npy",lables)
+#np.save("data.npy",data)
+#np.save("lables.npy",lables)
 print("[INFO] Arrays saved to disk")
 
 
