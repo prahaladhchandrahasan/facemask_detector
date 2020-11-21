@@ -4,7 +4,7 @@ from keras.preprocessing.image import img_to_array
 import os
 from numpy import loadtxt
 from keras.models import load_model
-
+threshold = 0.6
 model=load_model('model.h5')
 print(model.summary())
 font = cv2.FONT_HERSHEY_SIMPLEX 
@@ -16,7 +16,7 @@ while True:
 	img = img.reshape((1,224,224,3))
 	Y = model.predict(img)
 	print(Y)
-	if Y>0.6:
+	if Y>threshold:
 		pred = 'No Mask'
 		cv2.putText(frame, pred, (150,400), font , 2, (0, 0, 255),3, cv2.LINE_AA)
 	else:
