@@ -28,6 +28,6 @@ print(lables.shape)
 
 #np.save("data.npy",data)
 #np.save("lables.npy",lables)
-print("[INFO] Arrays saved to disk")
+print("[INFO] Arrays saved to disk.")
 
 
