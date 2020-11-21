@@ -22,7 +22,7 @@ for category in CATEGORIES:
 
 data = np.array(data, "float32")
 lables = np.array(lables,"float32")
-print("[INFO] Shapes of data and lables arrays")
+print("[INFO] Shapes of data and lables arrays.")
 print(data.shape)
 print(lables.shape)
 
